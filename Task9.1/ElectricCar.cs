@@ -37,10 +37,10 @@ namespace Task9._1
             }
         }
 
-        public ElectricCar(int _weight, int _maxspeed, int _doorsnumber, string _fueltype, int _rangeononecharge, int _chargelevel) : base(_weight, _maxspeed, _doorsnumber, _fueltype)
+        public ElectricCar(int weight, int maxspeed, int doorsnumber, string fueltype, int rangeononecharge, int chargelevel) : base(weight, maxspeed, doorsnumber, fueltype)
         {
-            ChargeLevel = _chargelevel;
-            RangeOnOneCharge = _rangeononecharge;
+            ChargeLevel = chargelevel;
+            RangeOnOneCharge = rangeononecharge;
         }
         public new void DisplayInfo()
         {

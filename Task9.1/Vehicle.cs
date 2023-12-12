@@ -34,10 +34,10 @@
                 }
             }
         }
-        public Vehicle(int _weight, int _maxspeed)
+        public Vehicle(int weight, int maxspeed)
         {
-            Weight = _weight;
-            MaxSpeed = _maxspeed;
+            Weight = weight;
+            MaxSpeed = maxspeed;
         }
 
         public virtual void DisplayInfo()

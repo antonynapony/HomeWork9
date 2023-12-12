@@ -1,6 +1,6 @@
 ﻿using Task9._1;
 
-Vehicle vehicle = new Vehicle(2400, 180);
+Vehicle vehicle = new Vehicle(2400, -180);
 Truck truck = new Truck(5400, 180, 17654);
 Car car = new Car (2000, 240, 4, "Дизель");
 ElectricCar electricCar = new ElectricCar(1800, 320, 2, "Электричество", 540, 1000);

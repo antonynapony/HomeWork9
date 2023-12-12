@@ -19,9 +19,9 @@
             }
         }
 
-        public Truck(int _weight, int _maxspeed, int _loadcapacity) : base(_weight, _maxspeed)
+        public Truck(int weight, int maxspeed, int loadcapacity) : base(weight, maxspeed)
         {
-            LoadCapacity = _loadcapacity;
+            LoadCapacity = loadcapacity;
         }
 
         public override void DisplayInfo()

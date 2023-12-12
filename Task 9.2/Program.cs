@@ -1,10 +1,10 @@
 ﻿using Task_9._2;
 
+IMultimediaDevice device;
 Console.WriteLine("Выберите устройство для управления:\n" +
                   "Нажмите 1 для управления MP3-плеером\n" +
                   "Нажмите 2 для управления DVD-проигрывателем\n" +
-                  "Нажмите 3 для управления радио\n" +
-                  "Нажмите 4 для выхода из меню");
+                  "Нажмите 3 для управления радио");
 while (true)
 {
     bool IsSuccessChoice = int.TryParse(Console.ReadLine(), out int choice);
@@ -12,25 +12,23 @@ while (true)
     {
         if (choice == 1)
         {
-            MP3Player mp3player = new MP3Player();
-            mp3player.IMultimediaDevice();
-            continue;
+            device = new MP3Player();
+            DeviceManager manager = new DeviceManager();
+            manager.Manage(device);
+            break;
         }
         else if (choice == 2)
         {
-            DVDPlayer dvdplayer = new DVDPlayer();
-            dvdplayer.IMultimediaDevice();
-            continue;
+            device = new DVDPlayer();
+            DeviceManager manager = new DeviceManager();
+            manager.Manage(device);
+            break;
         }
         else if (choice == 3)
         {
-            Radio radio = new Radio();
-            radio.IMultimediaDevice();
-            continue;
-        }
-        else if (choice == 4)
-        {
-            Console.WriteLine("Вы вышли из меню управления!");
+            device = new Radio();
+            DeviceManager manager = new DeviceManager();
+            manager.Manage(device);
             break;
         }
         else

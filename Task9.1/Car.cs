@@ -35,10 +35,10 @@
             }
         }
 
-        public Car(int _weight, int _maxspeed, int _doorsnumber, string _fueltype) : base(_weight, _maxspeed)
+        public Car(int weight, int maxspeed, int doorsnumber, string fueltype) : base(weight, maxspeed)
         {
-            DoorsNumber = _doorsnumber;
-            FuelType = _fueltype;
+            DoorsNumber = doorsnumber;
+            FuelType = fueltype;
         }
 
         public override void DisplayInfo()

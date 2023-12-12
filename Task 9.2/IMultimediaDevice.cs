@@ -6,7 +6,7 @@
         void Stop();
         void Pause();
         void Next();
-        void IncreaseVolume();
-        void DecreaseVolume();
+        void IncreaseVolume(int value);
+        void DecreaseVolume(int value);
     }
 }
